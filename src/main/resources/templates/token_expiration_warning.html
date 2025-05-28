@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Token Expiration Warning</title>
+</head>
+<body>
+<p>Dear <span th:text="${name}">Customer</span>,</p>
+<p>
+    This is a friendly reminder from <span th:text="${companyName}">EUCL</span> that your electricity token
+    (Token starting with: <strong th:text="${tokenIdentifier}">XXXX...</strong>)
+    for meter number <strong th:text="${meterNumber}">000000</strong>
+    is going to expire in approximately <strong th:text="${hoursUntilExpiry}">N</strong> hour(s).
+</p>
+<p>Please purchase a new token soon to avoid any interruption in your electricity supply.</p>
+<p>Thank you,</p>
+<p>The <span th:text="${companyName}">EUCL</span> Team</p>
+</body>
+</html>
